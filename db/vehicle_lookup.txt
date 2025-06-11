@@ -1,0 +1,52 @@
+Vehicle Recommendation Rules for LLM Tool
+
+1. Short Distance Travel:
+   - If the destination is within 100 km,
+   - AND the number of people traveling is <= 2,
+   - AND the weather is NOT rainy,
+   - AND the duration of the trip is 1 or 2 days:
+     * Recommend a bike (if geared is preferred).
+     * Recommend an Activa/scooter (if non-geared is preferred).
+
+2. Long Distance Travel:
+   - If the destination is more than 100 km:
+     * Recommend either a car or a touring bike with good mileage and comfort.
+
+3. Group Travel:
+   - If more than 4 people are traveling:
+     * Recommend an SUV or a van.
+   - If 3-4 people:
+     * Recommend a hatchback or compact sedan for cost-efficiency.
+
+4. Terrain-Specific Suggestions:
+   - For hilly or off-road terrain:
+     * Recommend SUVs or high CC bikes (like Himalayan, RE Classic).
+   - For city travel with traffic:
+     * Recommend scooters or small hatchbacks.
+
+5. Weather Consideration:
+   - If the weather is rainy:
+     * Avoid recommending bikes unless explicitly preferred.
+     * Prefer closed vehicles like cars for safety.
+
+6. User Preference Overrides:
+   - If the user explicitly prefers a bike or car, honor that first before rule-based suggestions.
+
+7. Duration-based Rules:
+   - For one-day travel: Recommend lightweight, low-rental options (Activa, Splendor, hatchback).
+   - For multi-day travel: Recommend vehicles with better comfort, mileage, and space.
+
+8. Comfort & Utility:
+   - If the user values comfort highly:
+     * Recommend premium variants of the available vehicle type.
+   - If carrying luggage:
+     * Avoid scooters, suggest sedans or SUVs.
+
+9. Web-based Validation:
+   - The tool can optionally search the web to validate if a specific vehicle model is suitable for a use case (e.g., “Is Honda Activa good for hill travel?”).
+
+10. Mileage & Cost Preference:
+   - If the user prioritizes fuel efficiency or cost savings:
+     * Highlight budget-friendly and high-mileage options like scooters and entry-level bikes.
+
+These rules should guide the LLM tool's responses before performing any write/update actions.
