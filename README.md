@@ -2,6 +2,7 @@
 - Designed a chatbot for a Vehicle Rental Service.
 - The UI is using streamlit.
 - The backend has been created using langraph, langchain, huggingface tokens.
+- The chatbot.ipynb has the explanation has a deatiled explanation along with the outpu
 
 ## Getting Started
 - Make sure you are in a Virtual Environment([Reference]([url](https://www.w3schools.com/python/python_virtualenv.asp))).
