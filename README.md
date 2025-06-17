@@ -2,6 +2,8 @@
 - Designed a chatbot for a Vehicle Rental Service.
 - The UI is using streamlit.
 - The backend has been created using langraph, langchain, huggingface tokens.
+- The chatbot.ipynb has the explanation has a deatiled explanation along with the outputs.
+- This chatbot can be used in helping users in selecting a vehicle, helping them in certain situations in case they have a problem with the vehicle or taking review of vehicle
 
 ## Getting Started
 - Make sure you are in a Virtual Environment([Reference]([url](https://www.w3schools.com/python/python_virtualenv.asp))).
@@ -26,19 +28,8 @@ TAVILY_API_KEY=tvly-dev-xxxxx
 ![image](https://github.com/user-attachments/assets/5df213c9-2292-4f18-9000-9963dc32f055)
 ![image](https://github.com/user-attachments/assets/222d57fa-cea0-4c72-a17f-7baad73b629a)
 
-## Tree
-```Tree
-.
-├── chroma_db
-├── db
-├── .env
-├── .gitignore
-├── .python-version
-├── README.md
-├── Travel Partner.pdf
-├── app.py
-├── chabot.ipynb
-├── pyproject.toml
-├── requirements.txt
-└── uv.lock
+## **Note**
+- I have also created a chatbot without tool functions, which will not throw any errors
+```shell
+streamlit run main.py
 ```
