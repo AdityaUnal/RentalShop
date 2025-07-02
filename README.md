@@ -29,7 +29,7 @@ TAVILY_API_KEY=tvly-dev-xxxxx
 ![image](https://github.com/user-attachments/assets/222d57fa-cea0-4c72-a17f-7baad73b629a)
 
 ## **Note**
-- I have also created a chatbot without tool functions, which will not throw any errors
+- I have also created a chatbot without tool functions.
 ```shell
 streamlit run main.py
 ```
